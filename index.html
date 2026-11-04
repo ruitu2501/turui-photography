@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>turui — Photography</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;500&family=Noto+Sans+SC:wght@300;400;500&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Language Switcher -->
+  <div class="lang-switch">
+    <button class="lang-btn active" data-lang="zh">中</button>
+    <span class="lang-divider">/</span>
+    <button class="lang-btn" data-lang="en">EN</button>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <a href="#home" class="logo">turui</a>
+    <nav class="nav">
+      <a href="#home" class="nav-link" data-zh="首页" data-en="Home">首页</a>
+      <a href="#portfolio" class="nav-link" data-zh="作品集" data-en="Works">作品集</a>
+      <a href="#about" class="nav-link" data-zh="关于我" data-en="About">关于我</a>
+      <a href="#contact" class="nav-link" data-zh="联系" data-en="Contact">联系</a>
+    </nav>
+    <button class="menu-toggle" aria-label="Menu">
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu">
+    <a href="#home" class="mobile-link" data-zh="首页" data-en="Home">首页</a>
+    <a href="#portfolio" class="mobile-link" data-zh="作品集" data-en="Works">作品集</a>
+    <a href="#about" class="mobile-link" data-zh="关于我" data-en="About">关于我</a>
+    <a href="#contact" class="mobile-link" data-zh="联系" data-en="Contact">联系</a>
+  </div>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <p class="hero-subtitle" data-zh="摄影 · 孩子 · 故乡" data-en="Photography · Children · Hometown">摄影 · 孩子 · 故乡</p>
+      <h1 class="hero-title">turui</h1>
+      <p class="hero-desc" data-zh="记录那些不被注视的瞬间，像电影里缓慢流过的光" data-en="Recording the unnoticed moments, like light slowly passing through a film">记录那些不被注视的瞬间，像电影里缓慢流过的光</p>
+    </div>
+    <div class="hero-scroll">
+      <span data-zh="向下滚动" data-en="Scroll">向下滚动</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section id="portfolio" class="portfolio">
+    <div class="section-header">
+      <h2 class="section-title" data-zh="作品集" data-en="Works">作品集</h2>
+      <p class="section-subtitle" data-zh="点击封面进入系列" data-en="Click a cover to enter the series">点击封面进入系列</p>
+    </div>
+
+    <!-- Series Covers -->
+    <div class="series-covers" id="series-covers">
+      <div class="series-cover" data-series="portrait">
+        <div class="series-cover-img">
+          <img src="images/works/photo_001.jpg" alt="孩子特写" loading="lazy" />
+        </div>
+        <div class="series-cover-info">
+          <h3 data-zh="孩子特写" data-en="Portrait">孩子特写</h3>
+          <span data-zh="查看系列" data-en="View series">查看系列</span>
+        </div>
+      </div>
+      <div class="series-cover" data-series="play">
+        <div class="series-cover-img">
+          <img src="images/works/photo_030.jpg" alt="奔跑玩耍" loading="lazy" />
+        </div>
+        <div class="series-cover-info">
+          <h3 data-zh="奔跑玩耍" data-en="Play">奔跑玩耍</h3>
+          <span data-zh="查看系列" data-en="View series">查看系列</span>
+        </div>
+      </div>
+      <div class="series-cover" data-series="water">
+        <div class="series-cover-img">
+          <img src="images/works/photo_120.jpg" alt="水边河边" loading="lazy" />
+        </div>
+        <div class="series-cover-info">
+          <h3 data-zh="水边河边" data-en="Water">水边河边</h3>
+          <span data-zh="查看系列" data-en="View series">查看系列</span>
+        </div>
+      </div>
+      <div class="series-cover" data-series="mountain">
+        <div class="series-cover-img">
+          <img src="images/works/photo_150.jpg" alt="山与田野" loading="lazy" />
+        </div>
+        <div class="series-cover-info">
+          <h3 data-zh="山与田野" data-en="Mountain">山与田野</h3>
+          <span data-zh="查看系列" data-en="View series">查看系列</span>
+        </div>
+      </div>
+      <div class="series-cover" data-series="weather">
+        <div class="series-cover-img">
+          <img src="images/works/photo_080.jpg" alt="雾雨雪" loading="lazy" />
+        </div>
+        <div class="series-cover-info">
+          <h3 data-zh="雾雨雪" data-en="Weather">雾雨雪</h3>
+          <span data-zh="查看系列" data-en="View series">查看系列</span>
+        </div>
+      </div>
+      <div class="series-cover" data-series="park">
+        <div class="series-cover-img">
+          <img src="images/works/photo_070.jpg" alt="公园植物" loading="lazy" />
+        </div>
+        <div class="series-cover-info">
+          <h3 data-zh="公园植物" data-en="Park">公园植物</h3>
+          <span data-zh="查看系列" data-en="View series">查看系列</span>
+        </div>
+      </div>
+      <div class="series-cover" data-series="daily">
+        <div class="series-cover-img">
+          <img src="images/works/photo_131.jpg" alt="日常瞬间" loading="lazy" />
+        </div>
+        <div class="series-cover-info">
+          <h3 data-zh="日常瞬间" data-en="Daily">日常瞬间</h3>
+          <span data-zh="查看系列" data-en="View series">查看系列</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Series Detail (hidden by default) -->
+    <div class="series-detail hidden" id="series-detail">
+      <button class="series-back" id="series-back">
+        <span data-zh="← 返回系列" data-en="← Back to series">← 返回系列</span>
+      </button>
+      <h3 class="series-detail-title" id="series-detail-title"></h3>
+      <div class="portfolio-grid" id="series-photos">
+        <!-- Photos injected by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="about">
+    <div class="about-grid">
+      <div class="about-image">
+        <div class="about-img-placeholder">
+          <span data-zh="照片占位" data-en="Photo">照片占位</span>
+        </div>
+      </div>
+      <div class="about-content">
+        <h2 class="section-title" data-zh="关于我" data-en="About">关于我</h2>
+        <div class="about-text">
+          <p data-zh="我是 turui。" data-en="I am turui.">我是 turui。</p>
+          <p data-zh="我主要拍摄自己的孩子，以及故乡的风景。镜头对准的，是日常里那些不经意的瞬间，和土地上沉默的时间。" data-en="I mainly photograph my own children and the landscapes of my hometown. The camera is pointed at those fleeting, unintentional moments of daily life, and the silent time that rests on the land.">我主要拍摄自己的孩子，以及故乡的风景。镜头对准的，是日常里那些不经意的瞬间，和土地上沉默的时间。</p>
+          <p data-zh="我喜欢贾樟柯和北野武的电影，喜欢山本耀司的衣服。那些作品里有一种克制的真实，和安静的力量。" data-en="I love the films of Jia Zhangke and Takeshi Kitano, and the clothes of Yohji Yamamoto. There is a restrained authenticity and quiet strength in their work.">我喜欢贾樟柯和北野武的电影，喜欢山本耀司的衣服。那些作品里有一种克制的真实，和安静的力量。</p>
+          <p data-zh="希望我的照片也能留下一点这样的气息。" data-en="I hope my photographs can carry a little of that same spirit.">希望我的照片也能留下一点这样的气息。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <div class="section-header">
+      <h2 class="section-title" data-zh="联系" data-en="Contact">联系</h2>
+      <p class="section-subtitle" data-zh="欢迎交流" data-en="Let's connect">欢迎交流</p>
+    </div>
+
+    <div class="contact-content">
+      <div class="contact-info">
+        <div class="contact-item">
+          <span class="contact-label" data-zh="邮箱" data-en="Email">邮箱</span>
+          <a href="mailto:960236412@qq.com" class="contact-value">960236412@qq.com</a>
+        </div>
+        <div class="contact-item">
+          <span class="contact-label" data-zh="手机" data-en="Phone">手机</span>
+          <a href="tel:19871574261" class="contact-value">19871574261</a>
+        </div>
+        <div class="contact-item">
+          <span class="contact-label" data-zh="微信" data-en="WeChat">微信</span>
+          <span class="contact-value">TURUI4261</span>
+        </div>
+        <div class="contact-item">
+          <span class="contact-label" data-zh="社交媒体" data-en="Social">社交媒体</span>
+          <div class="social-icons">
+            <!-- 微信 -->
+            <a href="weixin://dl/add/TURUI4261" class="social-link" title="微信：TURUI4261" data-platform="wechat">
+              <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M8.691 2.188C3.891 2.188 0 5.476 0 9.53c0 2.136 1.12 4.05 2.87 5.37L2.1 17.8l3.24-1.62c.9.27 1.85.42 2.85.42.3 0 .6-.015.89-.04a5.8 5.8 0 0 1-.18-1.4c0-3.54 3.24-6.42 7.23-6.42.3 0 .6.015.89.045C16.35 4.73 12.9 2.19 8.69 2.19zm-2.4 5.4c.5 0 .9.4.9.9s-.4.9-.9.9-.9-.4-.9-.9.4-.9.9-.9zm4.8 0c.5 0 .9.4.9.9s-.4.9-.9.9-.9-.4-.9-.9.4-.9.9-.9zm7.53 1.92c-3.3 0-5.97 2.34-5.97 5.22 0 1.8.96 3.42 2.46 4.5l-.66 2.1 2.58-1.32c.72.18 1.47.3 2.25.3 3.3 0 5.97-2.34 5.97-5.22s-2.67-5.22-5.97-5.22zm-2.4 3.3c.36 0 .66.3.66.66s-.3.66-.66.66-.66-.3-.66-.66.3-.66.66-.66zm4.8 0c.36 0 .66.3.66.66s-.3.66-.66.66-.66-.3-.66-.66.3-.66.66-.66z"/>
+              </svg>
+              <span class="social-name">TURUI4261</span>
+            </a>
+            <!-- 抖音 -->
+            <a href="https://v.douyin.com/X0waW9VfPts/" class="social-link" target="_blank" rel="noopener" title="抖音" data-platform="douyin">
+              <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 0 0-.79-.05A6.34 6.34 0 0 0 3.16 15.3a6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.34-6.34V8.95a8.17 8.17 0 0 0 4.76 1.52V6.99a4.85 4.85 0 0 1-1.01-.3z"/>
+              </svg>
+              <span class="social-name" data-zh="抖音" data-en="Douyin">抖音</span>
+            </a>
+            <!-- 小红书 -->
+            <a href="https://www.xiaohongshu.com/user/profile/632051c5000000002303c68c" class="social-link" target="_blank" rel="noopener" title="小红书" data-platform="xiaohongshu">
+              <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M18.5 2h-13A3.5 3.5 0 0 0 2 5.5v13A3.5 3.5 0 0 0 5.5 22h13a3.5 3.5 0 0 0 3.5-3.5v-13A3.5 3.5 0 0 0 18.5 2zM12 17.5a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5zm2.2-5.3c-.4.4-1 .6-1.7.6h-.5v1.8h-1.5V8.5h2.1c1.3 0 2.3.8 2.3 2.1 0 .7-.3 1.3-.7 1.6zM12.5 10h-.5v1.6h.5c.5 0 .8-.3.8-.8s-.3-.8-.8-.8z"/>
+              </svg>
+              <span class="social-name" data-zh="小红书" data-en="Xiaohongshu">小红书</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <form class="contact-form" onsubmit="return false;">
+        <div class="form-group">
+          <input type="text" id="name" required />
+          <label for="name" data-zh="姓名" data-en="Name">姓名</label>
+        </div>
+        <div class="form-group">
+          <input type="email" id="email" required />
+          <label for="email" data-zh="邮箱" data-en="Email">邮箱</label>
+        </div>
+        <div class="form-group">
+          <textarea id="message" rows="4" required></textarea>
+          <label for="message" data-zh="留言" data-en="Message">留言</label>
+        </div>
+        <button type="submit" class="submit-btn" data-zh="发送" data-en="Send">发送</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p class="footer-text">© <span id="year"></span> turui</p>
+    <p class="footer-note" data-zh="记录那些不被注视的瞬间" data-en="Recording the unnoticed moments">记录那些不被注视的瞬间</p>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightbox-close" aria-label="Close">&times;</button>
+    <button class="lightbox-prev" id="lightbox-prev" aria-label="Previous">&#10094;</button>
+    <button class="lightbox-next" id="lightbox-next" aria-label="Next">&#10095;</button>
+    <div class="lightbox-content">
+      <img src="" alt="" id="lightbox-img" />
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
