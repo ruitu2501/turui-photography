@@ -126,7 +126,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function openLightbox(index) {
     if (!currentPhotos.length) return;
     currentIndex = index;
-    lightboxImg.src = "images/works/" + currentPhotos[currentIndex];
+    lightboxImg.src = "images/" + currentPhotos[currentIndex];
     lightbox.classList.add("active");
     document.body.style.overflow = "hidden";
   }
@@ -140,13 +140,13 @@ document.addEventListener("DOMContentLoaded", () => {
   function showPrev() {
     if (!currentPhotos.length) return;
     currentIndex = (currentIndex - 1 + currentPhotos.length) % currentPhotos.length;
-    lightboxImg.src = "images/works/" + currentPhotos[currentIndex];
+    lightboxImg.src = "images/" + currentPhotos[currentIndex];
   }
 
   function showNext() {
     if (!currentPhotos.length) return;
     currentIndex = (currentIndex + 1) % currentPhotos.length;
-    lightboxImg.src = "images/works/" + currentPhotos[currentIndex];
+    lightboxImg.src = "images/" + currentPhotos[currentIndex];
   }
 
   lightboxClose.addEventListener("click", closeLightbox);
@@ -188,7 +188,7 @@ document.addEventListener("DOMContentLoaded", () => {
           (src, i) => `
         <div class="portfolio-item" data-index="${i}">
           <div class="portfolio-img">
-            <img src="images/works/${src}" alt="" loading="lazy" />
+            <img src="images/${src}" alt="" loading="lazy" />
           </div>
         </div>
       `
